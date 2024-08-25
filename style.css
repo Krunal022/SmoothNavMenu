@@ -1,69 +1,122 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: aeonik;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: aeonik;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 #main {
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-image: url(https://images.unsplash.com/photo-1630912266376-46226c4d4d75?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://images.unsplash.com/photo-1630912266376-46226c4d4d75?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3vw;
-    color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw;
+  color: black;
 }
 
 nav h2 {
-    font-size: 1.8vw;
-    font-weight: 550;
+  font-size: 1.8vw;
+  font-weight: 550;
 }
 
 nav i {
-    font-size: 2.1vw;
-    font-weight: 800;
-    cursor: pointer;
+  font-size: 2.1vw;
+  font-weight: 800;
+  cursor: pointer;
 }
 
 #full {
-    height: 100%;
-    width: 35%;
-    background-color: rgba(245, 245, 245, 0.422);
-    position: absolute;
-    top: 0;
-    right: -35%;
-    padding: 9vw 4vw;
-    backdrop-filter: blur(10px);
+  height: 100%;
+  width: 35%;
+  background-color: rgba(245, 245, 245, 0.422);
+  position: absolute;
+  top: 0;
+  right: -35%;
+  padding: 9vw 4vw;
+  backdrop-filter: blur(10px);
 }
 
 #full h4 {
-    font-size: 3vw;
-    margin-bottom: .5vw;
-    font-weight: 540;
+  font-size: 3vw;
+  margin-bottom: 0.5vw;
+  font-weight: 540;
 }
 
 #full i {
-    cursor: pointer;
+  cursor: pointer;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 3vw;
+  font-weight: 540;
+}
+
+@media (max-width: 600px) {
+  #main {
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    font-family: aeonik;
+  }
+
+  nav {
+    width: 100%;
+    padding: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav h2 {
+    font-size: 3.1vw;
+    font-family: neue machina;
+  }
+
+  nav i {
+    padding-right: 3vw;
+    font-size: 3.4vw;
+  }
+
+  #full {
     position: absolute;
-    top: 5%;
-    right: 5%;
-    font-size: 3vw;
-    font-weight: 540;
+    top: 0;
+    right: -80%;
+    background-color: #70676e0f;
+    backdrop-filter: blur(10px);
+    width: 50%;
+    height: 30%;
+    margin: 3vw;
+    border-radius: 20px;
+  }
+
+  #full h4 {
+    color: rgb(8, 8, 8);
+    /* background-color: red; */
+    font-size: 4.2vw;
+    font-weight: 400;
+  }
+
+  #full i {
+    color: #1c191a;
+    font-size: 6.3vw;
+  }
 }
